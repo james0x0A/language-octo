@@ -8,3 +8,7 @@
 
 ##### 0.2.1 - Fix this
 * Release notes fixed
+
+##### 0.2.2 - Bugfixes
+* Fix typo in the XO-Chip keyword category
+* Allow any character except whitespace or '#' in variable names

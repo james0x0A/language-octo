@@ -24,11 +24,11 @@ repository:
             [
                 {
                     begin: "(?<=^|\\s)(\:(\\s)+)"
-                    end: "(?=\\s)"
+                    end: "(?=\\s|#)"
                     name: "meta.function.octo"
                     patterns:
                         [
-                            match:"((\\w|-)+)"
+                            match:"((\\w|.)+?)"
                             name: "entity.name.function.octo"
                         ]
                 }
@@ -87,7 +87,7 @@ repository:
                 {
                     #XO-Chip
                     match: "(?<=^|\\s)(long|plane|scroll-up)(?=\\s)"
-                    name: "keyword.octo.other"
+                    name: "keyword.other.octo"
                 },
                 {
                     match: "(?<=^|\\s)(i|v[0-9A-Fa-f]|delay|buzzer)(?=\\s)"
