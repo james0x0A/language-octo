@@ -18,3 +18,7 @@
 
 ##### 0.2.4 - Mea culpa
 * Computers are hard
+
+##### 0.2.5 - Cleanup
+ * Add some documentation for installation
+ * Update package description
