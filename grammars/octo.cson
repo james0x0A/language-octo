@@ -1,0 +1,67 @@
+fileTypes: [
+  "o8", "8o", "oct", "octo"
+]
+name: "Octo"
+patterns: [
+    { include: "#code" }
+]
+repository:
+    code:
+        patterns: [
+          { include: "#numbers" },
+          { include: "#comments" },
+          { include: "#keywords" },
+          { include: "#label" }
+        ]
+    comments:
+        begin: "#"
+        end: "$\\n?"
+        name: "comment.line.octo"
+
+    label:
+        patterns:
+            [
+                {
+                    begin: "(?<=^|\\s)(\:(\\s)+)"
+                    end: "(?=\\s)"
+                    name: "meta.function.octo"
+                    patterns:
+                        [
+                            match:"((\\w|\-)+)"
+                            name: "entity.name.function.octo"
+                        ]
+                }
+            ]
+
+    numbers:
+        patterns:
+            [
+                {
+                    #^|\t|
+                    match: "(?<=^|\\s)((0(x|X)[0-9a-fA-F]+)|(0(b|B)[01]+)|(0(o|O)[0-7]+)|([0-9]+(\\.[0-9]+)?))(?=\\s)"
+                    #\t| |$
+                    name: "constant.numeric.octo"
+                }
+            ]
+    keywords:
+        patterns:
+            [
+                {
+                    match: "(?<=^|\\s)(if|else|while|return|then|begin|end|loop|again|jump|jump0)(?=\\s)"
+                    name: "keyword.control.octo"
+                },
+                {
+                    match: "(?<=^|\\s)(sprite|save|load|clear|hex|long|bcd|random)(?=\\s)"
+                    name: "keyword.other.octo"
+                },
+                {
+                    match: "(?<=^|\\s)(i|v[0-9A-Fa-f])(?=\\s)"
+                    name: "variable.language.octo"
+                },
+                {
+                    match: "(?<=^|\\s)(\:=|==|\\+=|!=|\\^=|\\-=|&=|key|\\-key)(?=\\s)"
+                    name: "keyword.operator.octo"
+                }
+            ]
+
+scopeName: "source.octo"
