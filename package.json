@@ -1,8 +1,11 @@
 {
   "name": "language-octo",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Octo language support",
-  "keywords": [ "CHIP-8", "Octo", "COSMAC VIP"
+  "keywords": [
+    "CHIP-8",
+    "Octo",
+    "COSMAC VIP"
   ],
   "repository": "https://github.com/james0x0A/language-octo",
   "license": "MIT",
@@ -10,6 +13,5 @@
     "atom": "*",
     "node": "*"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
