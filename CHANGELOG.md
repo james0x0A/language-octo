@@ -22,3 +22,8 @@
 ##### 0.2.5 - Cleanup
  * Add some documentation for installation
  * Update package description
+
+##### 0.2.6 - Compliance
+ * Add a couple of missing keywords
+ * Separate hex, bighex and long into CHIP-8, SuperChip and XO-Chip respectively
+ * Categorize hex, bighex and long as parameters 

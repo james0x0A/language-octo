@@ -61,41 +61,53 @@ repository:
         patterns:
             [
                 {
-                    #^|\t|
                     match: "(?<=^|\\s)(\\+|-)?((0(x|X)[0-9a-fA-F]+)|(0(b|B)[01]+)|(0(o|O)[0-7]+)|([0-9]+(\\.[0-9]+)?))(?=\\s)"
-                    #\t| |$
                     name: "constant.numeric.octo"
                 }
             ]
     keywords:
         patterns:
             [
+                #CHIP-8
                 {
                     match: "(?<=^|\\s)(if|else|while|then|begin|end|loop|again)(?=\\s)"
                     name: "keyword.control.octo"
                 },
                 {
-                    #CHIP-8
-                    match: "(?<=^|\\s)(sprite|save|load|clear|hex|bcd|random|return|;|jump|jump0)(?=\\s)"
+                    match: "(?<=^|\\s)(sprite|save|load|clear|bcd|random|return|;|jump|jump0)(?=\\s)"
                     name: "keyword.other.octo"
                 },
                 {
-                    #SuperChip
-                    match: "(?<=^|\\s)(hires|lores|scroll-down|scroll-left|scroll-right|bighex|exit|saveflags|loadflags)(?=\\s)"
-                    name: "keyword.other.octo"
-                },
-                {
-                    #XO-Chip
-                    match: "(?<=^|\\s)(long|plane|scroll-up)(?=\\s)"
-                    name: "keyword.other.octo"
+                    match: "(?<=^|\\s)(hex)(?=\\s)"
+                    name: "variable.paramter.octo"
                 },
                 {
                     match: "(?<=^|\\s)(i|v[0-9A-Fa-f]|delay|buzzer)(?=\\s)"
                     name: "variable.language.octo"
                 },
                 {
-                    match: "(?<=^|\\s)(\\:=|==|\\+=|!=|\\^=|-=|=-|&=|\\|=|>>=|<<=|key|-key)(?=\\s)"
+                    match: "(?<=^|\\s)(\\:=|==|\\+=|!=|\\^=|\-=|=\-|&=|\\|=|>>=|<<=|key|\-key)(?=\\s)"
                     name: "keyword.operator.octo"
+                },
+
+                #SuperChip
+                {
+                    match: "(?<=^|\\s)(hires|lores|scroll-down|scroll-left|scroll-right|exit|saveflags|loadflags)(?=\\s)"
+                    name: "keyword.other.octo"
+                },
+                {
+                    match: "(?<=^|\\s)(bighex)(?=\\s)"
+                    name: "variable.paramter.octo"
+                },
+
+                #XO-Chip
+                {
+                    match: "(?<=^|\\s)(plane|scroll-up|audio)(?=\\s)"
+                    name: "keyword.other.octo"
+                },
+                {
+                    match: "(?<=^|\\s)(long)(?=\\s)"
+                    name: "variable.paramter.octo"
                 }
             ]
 
