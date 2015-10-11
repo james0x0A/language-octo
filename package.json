@@ -1,7 +1,7 @@
 {
   "name": "language-octo",
   "version": "0.2.4",
-  "description": "Octo language support",
+  "description": "Atom language support for Octo",
   "keywords": [
     "CHIP-8",
     "Octo",
