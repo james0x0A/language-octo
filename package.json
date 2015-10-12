@@ -1,7 +1,7 @@
 {
   "name": "language-octo",
   "version": "0.2.6",
-  "description": "Atom language support for Octo",
+  "description": "Atom language support for Octo, a high-level assembly language for CHIP-8",
   "keywords": [
     "CHIP-8",
     "Octo",

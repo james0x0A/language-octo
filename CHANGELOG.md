@@ -26,4 +26,7 @@
 ##### 0.2.6 - Compliance
  * Add a couple of missing keywords
  * Separate hex, bighex and long into CHIP-8, SuperChip and XO-Chip respectively
- * Categorize hex, bighex and long as parameters 
+ * Categorize hex, bighex and long as parameters
+
+## 0.3.0
+ * Added snippets ssub and sloop, two versions of the routine sync loop(with and without subroutine label)

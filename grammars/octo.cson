@@ -11,7 +11,7 @@ repository:
           { include: "#numbers" },
           { include: "#comments" },
           { include: "#keywords" },
-          { include: "#labels" }
+          { include: "#labels" },
           { include: "#macros"}
         ]
     comments:
@@ -28,7 +28,7 @@ repository:
                     name: "meta.function.octo"
                     patterns:
                         [
-                            match:"((\\w|.)+?)"
+                            match: "((\\w|.)+?)"
                             name: "entity.name.function.octo"
                         ]
                 }
@@ -49,7 +49,7 @@ repository:
                             {
                                 match: "(unpack)"
                                 name: "support.function.octo"
-                            }
+                            },
                             {
                                 match: "(breakpoint)"
                                 name: "support.other.octo"

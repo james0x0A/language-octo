@@ -1,0 +1,7 @@
+'.source.octo':
+    'sync loop':
+        prefix:  'sloop'
+        body:    'loop\n\tvf := delay\n\tif vf != 0 then\nagain\nvf := ${1:#time 1/60hz}\ndelay := vf${2:}'
+    'sync sub-routine':
+        prefix:  'ssub'
+        body:    ': sync\n\tloop\n\t\tvf := delay\n\t\tif vf != 0 then\n\tagain\n\tvf := ${1:#time 1/60hz}\n\tdelay := vf\n\treturn\n${2:}'
